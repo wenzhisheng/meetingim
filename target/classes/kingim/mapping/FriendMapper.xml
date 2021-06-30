@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kingim.dao.FriendMapper" >
+  <resultMap id="BaseResultMap" type="kingim.model.Friend" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="friend_id" property="friendId" jdbcType="INTEGER" />
+    <result column="build_time" property="buildTime" jdbcType="TIMESTAMP" />
+    <result column="type_id" property="typeId" jdbcType="INTEGER" />
+  </resultMap>
+
+    <!-- Friend被连接Map(区别id) -->
+    <resultMap type="kingim.model.Friend" id="JoinMap" extends="BaseResultMap">
+        <id property="id" column="pk_friend_id" />
+    </resultMap>
+  
+  	<resultMap type="kingim.model.Friend" id="Friend_User_Map" extends="JoinMap">
+		<association property="friendInfo" javaType="kingim.model.User"
+			resultMap="kingim.dao.UserMapper.JoinMap" />
+	</resultMap>
+
+    <!-- 将单个好友移动至另一个分组 -->
+    <update id="updateOneToOtherType">
+        update friend set type_id = #{toTypeId}
+        <where>
+            user_id = #{userId} and friend_id=#{friendId}
+        </where>
+    </update>
+
+    <delete id="delFriend">
+		delete from friend where (user_id = #{userId} and friend_id = #{friendId}) or (user_id = #{friendId} and friend_id = #{userId})
+	</delete>
+
+    <update id="updateAllToOtherType">
+        update friend set type_id = #{toTypeId}
+        <where>
+            user_id = #{userId} and type_id = #{fromTypeId}
+        </where>
+    </update>
+
+    <select id="searchFriends" resultType="kingim.model.User">
+       select t_user.user_name userName,t_user.avatar,t_user.nick_name nickName,t_user.sign,t_user.id
+        from t_user where user_name like concat('%',#{searchStr},'%') or nick_name like concat('%',#{searchStr},'%')
+    </select>
+
+    <!-- 查询是否是好友 -->
+    <select id="isFriend" resultType="boolean">
+        select count(id) from friend
+        <where>
+            user_id = #{userId} and friend_id = #{friendId}
+        </where>
+    </select>
+
+</mapper>

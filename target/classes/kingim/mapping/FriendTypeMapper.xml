@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kingim.dao.FriendTypeMapper" >
+  <resultMap id="BaseResultMap" type="kingim.model.FriendType" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="type_name" property="typeName" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="build_time" property="buildTime" jdbcType="TIMESTAMP" />
+    <result column="is_default" property="isDefault" jdbcType="INTEGER" />
+  </resultMap>
+
+	<!-- 好友列表map -->
+	<resultMap id="FriendMap" type="kingim.model.User">
+		<result column="type_name" jdbcType="VARCHAR" property="typeName"  />
+		<result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+		<result column="user_name" jdbcType="VARCHAR" property="userName" />
+		<result column="avatar" jdbcType="VARCHAR" property="avatar" />
+		<result column="sign" jdbcType="VARCHAR" property="sign" />
+		<result column="gmt_login" jdbcType="TIMESTAMP" property="gmtLogin" />
+	</resultMap>
+
+   <resultMap id="FriendListMap" extends="BaseResultMap" type="kingim.model.FriendType">
+ 		<collection property="friends" javaType="list" ofType="kingim.model.Friend" resultMap="kingim.dao.FriendMapper.Friend_User_Map">
+ 		</collection>
+   </resultMap>
+ 
+	<!-- 根据userId查询好友分组列表   -->
+	<select id="getFriendTypeByUserId" resultMap="FriendListMap">
+		SELECT
+		    friend_type.id,
+			friend_type.type_name,
+			friend.friend_id,
+			friend.type_id,
+			u.avatar,
+			u.sign,
+			u.nick_name,
+			u.gmt_login
+		FROM
+			friend_type
+		left JOIN friend ON friend.type_id = friend_type.id
+		left JOIN t_user u ON friend.friend_id = u.id
+		WHERE
+			friend_type.user_id = #{userId}
+	</select>
+
+	<!-- 根据分组id查询该分组下好友详细信息 -->
+	<select id="getFriendsByTypeId" resultMap="FriendMap">
+       select
+       t_user.user_name,
+       t_user.nick_name,
+	   t_user.avatar,
+	   t_user.id,
+	   friend_type.type_name
+		from t_user ,friend ,friend_type
+		where
+		t_user.ID = friend.friend_id
+		and	friend_type.id = friend.type_id
+		and t_user.id =friend.friend_id
+		and friend_type.id =  #{typeId,jdbcType=INTEGER}
+	</select>
+
+</mapper>

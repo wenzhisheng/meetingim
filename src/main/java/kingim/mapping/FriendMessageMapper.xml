@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="kingim.dao.FriendMessageMapper">
+
+    <resultMap id="BaseResultMap" type="kingim.model.FriendMessage">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="from_user_id" property="fromUserId" jdbcType="INTEGER" />
+        <result column="to_user_id" property="toUserId" jdbcType="INTEGER" />
+        <result column="content" property="content" jdbcType="VARCHAR" />
+        <result column="send_time" property="sendTime" jdbcType="TIMESTAMP" />
+        <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+        <result column="is_read" property="isRead" jdbcType="INTEGER" />
+        <result column="is_del" property="isDel" jdbcType="INTEGER" />
+        <result column="is_back" property="isBack" jdbcType="INTEGER" />
+        <result column="cid" property="cid" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <!-- 好友消息 -->
+    <resultMap id="friendMsgMap" extends="BaseResultMap" type="kingim.model.FriendMessage">
+        <result column="from_avatar" property="fromAvatar" jdbcType="VARCHAR" />
+        <result column="from_name" property="fromName" jdbcType="VARCHAR" />
+        <result column="to_avatar" property="toAvatar" jdbcType="VARCHAR" />
+        <result column="to_name" property="toName" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <delete id="scheduledFriendMessage">
+        delete from friend_message
+    </delete>
+
+    <select id="listFriendMessage" resultMap="BaseResultMap">
+      select *
+      from friend_message zs
+      <where>
+          1=1
+          <if test="vo.id != null">
+              and zs.id = #{vo.id,jdbcType=INTEGER}
+          </if>
+          <if test="vo.fromUserId != null">
+              and zs.from_user_id = #{vo.fromUserId,jdbcType=INTEGER}
+          </if>
+          <if test="vo.toUserId != null">
+              and zs.to_user_id = #{vo.toUserId,jdbcType=INTEGER}
+          </if>
+          <if test="vo.content != null">
+              and zs.content = #{vo.content,jdbcType=VARCHAR}
+          </if>
+          <if test="vo.isRead != null">
+              and zs.is_read = #{vo.isRead,jdbcType=INTEGER}
+          </if>
+          <if test="vo.isDel != null">
+              and zs.is_del = #{vo.isDel,jdbcType=INTEGER}
+          </if>
+          <if test="vo.isBack != null">
+              and zs.is_back = #{vo.isBack,jdbcType=INTEGER}
+          </if>
+          <if test="vo.cid != null">
+              and zs.cid = #{vo.cid,jdbcType=VARCHAR}
+          </if>
+          <if test="vo.startTime != null">
+              and zs.send_time &gt;= #{vo.startTime,jdbcType=TIMESTAMP}
+          </if>
+          <if test="vo.endTime != null">
+              and zs.send_time &lt;= #{vo.endTime,jdbcType=TIMESTAMP}
+          </if>
+      </where>
+      order by zs.send_time desc
+    </select>
+    
+    <!-- 清空历史记录 -->
+    <delete id="clearHistoryMessage">
+        update friend_message zs
+        <set>
+            zs.is_del = 1
+            ,zs.gmt_modified = NOW()
+        </set>
+        <where>
+            zs.is_del != 1
+            and zs.from_user_id = #{fromUserId,jdbcType=INTEGER}
+            and zs.to_user_id = #{toUserId,jdbcType=INTEGER}
+        </where>
+    </delete>
+
+    <!-- 更新撤回 -->
+    <update id="updateByCid">
+      update friend_message zs
+      <set>
+          zs.is_back = 1
+          ,zs.gmt_modified = NOW()
+      </set>
+      <where>
+          zs.cid = #{cid,jdbcType=VARCHAR}
+      </where>
+    </update>
+
+    <!-- 搜索聊天记录 -->
+    <select id="searchHistoryMessage" resultMap="friendMsgMap">
+        select
+               friend_message.*,
+               a.avatar from_avatar,
+               a.nick_name from_name,
+               b.avatar to_avatar,
+               b.nick_name to_name
+        from friend_message,t_user a,t_user b
+        where
+            friend_message.is_back = 0 and
+            friend_message.is_del = 0 and
+            friend_message.from_user_id=a.ID and
+            friend_message.to_user_id=b.ID and
+        (
+        (friend_message.from_user_id=#{fromUserId,jdbcType=INTEGER }  and friend_message.to_user_id= #{toUserId,jdbcType=INTEGER} )
+        or
+        (friend_message.from_user_id =  #{toUserId,jdbcType=INTEGER} and friend_message.to_user_id =#{fromUserId,jdbcType=INTEGER } )
+        )
+        and friend_message.content like concat('%',#{searchStr},'%')
+        order by send_time desc
+	</select>
+
+    <!-- 聊天记录 -->
+    <select id="getHistoryMessage" resultMap="friendMsgMap">
+        select
+               friend_message.*,
+               a.avatar from_avatar,
+               a.nick_name from_name,
+               b.avatar to_avatar,
+               b.nick_name to_name
+        from friend_message,t_user a,t_user b where
+            friend_message.is_back = 0 and
+            friend_message.is_del = 0 and
+            friend_message.from_user_id=a.ID and
+            friend_message.to_user_id=b.ID and
+        ( (friend_message.from_user_id=#{fromUserId,jdbcType=INTEGER }  and friend_message.to_user_id= #{toUserId,jdbcType=INTEGER} )
+        or (friend_message.from_user_id =  #{toUserId,jdbcType=INTEGER} and friend_message.to_user_id =#{fromUserId,jdbcType=INTEGER } ) )
+        ORDER BY send_time desc
+	</select>
+
+    <!-- 将用户未读的消息全部设置为已读 -->
+    <update id="updateAllToRead">
+	      update friend_message set is_read = 1 where (from_user_id = #{fromUserId,jdbcType=INTEGER }
+	      and to_user_id = #{toUserId,jdbcType=INTEGER})
+	</update>
+
+</mapper>

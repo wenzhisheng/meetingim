@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kingim.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="kingim.model.User" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="nick_name" property="nickName" jdbcType="VARCHAR" />
+    <result column="gender" property="gender" jdbcType="INTEGER" />
+    <result column="avatar" property="avatar" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="role_code" property="roleCode" jdbcType="INTEGER" />
+    <result column="is_enable" property="isEnable" jdbcType="TINYINT" />
+    <result column="sign" property="sign" jdbcType="VARCHAR" />
+    <result column="encrypted_question" property="encryptedQuestion" jdbcType="VARCHAR" />
+    <result column="encrypted_answer" property="encryptedAnswer" jdbcType="VARCHAR" />
+    <result column="gmt_login" property="gmtLogin" jdbcType="TIMESTAMP" />
+    <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+  </resultMap>
+  
+  	<resultMap type="kingim.model.User" id="JoinMap" extends="BaseResultMap">
+		<id property="id" column="pk_id" />
+	</resultMap>
+
+  <!-- 批量禁用 -->
+  <update id="updateEnable" parameterType="kingim.model.User">
+    update t_user
+    <set>
+      is_enable = 0
+    </set>
+    where id in
+    <foreach collection="vo.ids" item="item" index="index" open="(" separator="," close=")">
+      #{item}
+    </foreach>
+  </update>
+
+  <!-- 批量启用 -->
+  <update id="updateIsEnable" parameterType="kingim.model.User">
+    update t_user
+    <set>
+      is_enable = 1
+    </set>
+    where id in
+    <foreach collection="vo.ids" item="item" index="index" open="(" separator="," close=")">
+      #{item}
+    </foreach>
+  </update>
+
+  <!-- 批量删除 -->
+  <delete id="deleteUser" parameterType="kingim.model.User">
+    delete from t_user
+    where id in
+    <foreach collection="vo.ids" item="item" index="index" open="(" separator="," close=")">
+      #{item}
+    </foreach>
+  </delete>
+
+  <!-- 更新密保 -->
+  <update id="updateEncrypted" parameterType="kingim.model.User">
+    update t_user zs
+    <set>
+      <if test="vo.encryptedQuestion != null">
+        zs.encrypted_question = #{vo.encryptedQuestion,jdbcType=VARCHAR},
+      </if>
+      <if test="vo.encryptedAnswer != null">
+        zs.encrypted_answer = #{vo.encryptedAnswer,jdbcType=VARCHAR},
+      </if>
+      gmt_modified = NOW()
+    </set>
+    where zs.id = #{vo.id,jdbcType=INTEGER}
+  </update>
+
+  <!-- 更新状态 -->
+  <update id="updateUser" parameterType="kingim.model.User">
+    update t_user zs
+    set
+    <if test="vo.isEnable != null">
+      zs.is_enable = #{vo.isEnable,jdbcType=INTEGER},
+    </if>
+    <if test="vo.roleCode != null">
+      zs.role_code = #{vo.roleCode,jdbcType=INTEGER},
+    </if>
+    <if test="vo.nickName != null">
+      zs.nick_name = #{vo.nickName,jdbcType=VARCHAR},
+    </if>
+    <if test="vo.password != null">
+      zs.password = #{vo.password,jdbcType=VARCHAR},
+    </if>
+    <if test="vo.gender != null">
+      zs.gender = #{vo.gender,jdbcType=INTEGER},
+    </if>
+    <if test="vo.sign != null">
+      zs.sign = #{vo.sign,jdbcType=VARCHAR},
+    </if>
+    <if test="vo.encryptedQuestion != null">
+      zs.encrypted_question = #{vo.encryptedQuestion,jdbcType=VARCHAR},
+    </if>
+    <if test="vo.encryptedAnswer != null">
+      zs.encrypted_answer = #{vo.encryptedAnswer,jdbcType=VARCHAR},
+    </if>
+    zs.gmt_modified = NOW()
+    where zs.id = #{vo.id,jdbcType=INTEGER}
+  </update>
+
+  <select id="listUser" resultMap="BaseResultMap">
+    select *
+    from t_user zs
+    <where>
+        1=1
+      <if test="vo.id != null">
+        and zs.id = #{vo.id,jdbcType=INTEGER}
+      </if>
+      <if test="vo.userName != null">
+        and zs.user_name = #{vo.userName,jdbcType=VARCHAR}
+      </if>
+      <if test="vo.nickName != null">
+        and zs.nick_name = #{vo.nickName,jdbcType=VARCHAR}
+      </if>
+      <if test="vo.gender != null">
+        and zs.gender = #{vo.gender,jdbcType=INTEGER}
+      </if>
+      <if test="vo.roleCode != null">
+        and zs.role_code = #{vo.roleCode,jdbcType=INTEGER}
+      </if>
+      <if test="vo.isEnable != null">
+        and zs.is_enable = #{vo.isEnable,jdbcType=INTEGER}
+      </if>
+      <if test="vo.sign != null">
+        and zs.sign = #{vo.sign,jdbcType=VARCHAR}
+      </if>
+      <if test="vo.encryptedQuestion != null">
+        and zs.encrypted_question = #{vo.encryptedQuestion,jdbcType=VARCHAR}
+      </if>
+      <if test="vo.encryptedAnswer != null">
+        and zs.encrypted_answer = #{vo.encryptedAnswer,jdbcType=VARCHAR}
+      </if>
+      <if test="vo.gmtLogin != null">
+        and zs.gmt_login = #{vo.gmtLogin,jdbcType=TIMESTAMP}
+      </if>
+      <if test="vo.startTime != null">
+        and zs.gmt_create &gt;= #{vo.startTime,jdbcType=TIMESTAMP}
+      </if>
+      <if test="vo.endTime != null">
+        and zs.gmt_create &lt;= #{vo.endTime,jdbcType=TIMESTAMP}
+      </if>
+    </where>
+    order by zs.gmt_create desc
+  </select>
+
+  <select id="getUserByUserName" resultType="int">
+    select count(*)
+    from t_user zs
+    where 1=1
+    and zs.user_name = #{vo.userName,jdbcType=VARCHAR}
+  </select>
+
+  <update id="updateByPassword" parameterType="kingim.model.User">
+    update t_user zs
+    set zs.password = #{vo.password,jdbcType=VARCHAR}
+    ,zs.gmt_modified = NOW()
+    where 1=1
+    and zs.user_name = #{vo.userName,jdbcType=VARCHAR}
+  </update>
+
+  <select id="getEncrypted" resultType="kingim.model.User">
+    select
+    zs.encrypted_question as encryptedQuestion,
+    zs.encrypted_answer as encryptedAnswer
+    from t_user zs
+    where 1=1
+    and zs.user_name = #{vo.userName,jdbcType=VARCHAR}
+  </select>
+
+</mapper>

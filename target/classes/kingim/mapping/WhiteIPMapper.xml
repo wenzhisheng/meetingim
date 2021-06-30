@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kingim.dao.WhiteIPMapper" >
+
+  <resultMap id="BaseResultMap" type="kingim.model.WhiteIP" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="ip" property="ip" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+  </resultMap>
+
+    <select id="list" resultMap="BaseResultMap">
+        select *
+        from white_ip zs
+        <where>
+            1=1
+            <if test="vo.id != null">
+                and zs.id = #{vo.id,jdbcType=INTEGER}
+            </if>
+            <if test="vo.ip != null">
+                and zs.ip = #{vo.ip,jdbcType=VARCHAR}
+            </if>
+            <if test="vo.status != null">
+                and zs.status = #{vo.status,jdbcType=INTEGER}
+            </if>
+            <if test="vo.startTime != null">
+                and zs.gmt_create &gt;= #{vo.startTime,jdbcType=TIMESTAMP}
+            </if>
+            <if test="vo.endTime != null">
+                and zs.gmt_create &lt;= #{vo.endTime,jdbcType=TIMESTAMP}
+            </if>
+        </where>
+        order by zs.gmt_create desc
+    </select>
+
+    <!-- 批量删除 -->
+    <delete id="deleteWhiteIP" parameterType="kingim.model.WhiteIP">
+        delete from white_ip
+        where id in
+        <foreach collection="vo.ids" item="item" index="index" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+
+    <!-- 查询是否是好友 -->
+    <select id="isWhiteIP" resultType="boolean">
+        select count(*) from white_ip t
+        <where>
+            1=1
+            <if test="vo.ip != null">
+                and t.ip = #{vo.ip,jdbcType=VARCHAR}
+            </if>
+            <if test="vo.status != null">
+                and t.status = #{vo.status,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+
+</mapper>

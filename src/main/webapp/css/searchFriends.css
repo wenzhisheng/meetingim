@@ -1,0 +1,120 @@
+[class *= col-]{
+    background-color: #fff;
+}
+
+.searchFriends_md12{
+    height:100%;
+    overflow: auto;
+}
+
+.searchFriends_header{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.searchFriends_colume>row{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+body{
+    background-color:#ebedf2;
+    height:100%;
+}
+
+.searchFriends_inp{
+    padding-right:15px;
+    padding-left:15px;
+}
+
+.searchFriends_body{
+    border-top:1px solid #dddddd;
+    padding:15px;
+    vertical-align: middle;
+}
+
+.searchFriends_result .media-footer{
+    width:79%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.searchResult_sign{
+    height:15px;
+    line-height: 15px;
+}
+
+.searchFriends_result{
+    padding:10px 15px;
+    margin-bottom:15px;
+    border:1px solid #dddddd;
+}
+
+.searchFriends_result .media-body a{
+    position: absolute;
+    right: 25px;
+}
+
+.searchFriends_result .media-header{
+    width:80%;
+}
+.media-object{
+    width:70px;
+    margin:5px 10px;
+}
+
+.media-body, .media-left, .media-right{
+    vertical-align: middle;
+}
+
+.media-body{
+    padding-bottom:0;
+}
+
+.searchFriends_load{
+    width:100%;
+    position:absolute;
+}
+
+.searchFriends_load>img{
+position:relative;
+    left:45%;
+    clear:both;
+}
+
+.media-foot{
+    padding-top:5px;
+}
+
+.modal-dialog{
+    width:500px;
+}
+
+.addSomeone_info{
+    width:100%;
+    border:1px solid #dddddd;
+}
+
+.addSomeone_img,.addSomeone_text{
+    display:inline-block;
+    padding:0px 20px;
+}
+
+.addSomeone_img{
+    width:25%;
+}
+
+.addSomeone_text{
+    width:70%;
+    vertical-align: middle;
+}
+
+.addSomeone_img>img{
+    width:100px;
+    margin:10px auto;
+}
+
+.addSomeone_mess{
+    margin-top:15px;
+}

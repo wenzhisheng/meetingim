@@ -1,0 +1,36 @@
+.showMore{
+	text-align:center;
+}
+.showMore>a{
+	color:#0993F5;
+}
+.showMore>a:hover{
+	text-decoration:underline;
+	color:#0B7ED0;
+}
+.layim-chat-main{
+	height:calc(100%);
+}
+
+.descript-file{display: none;}
+.file-list{width: 100%;padding:10px;overflow-x: hidden;}
+.file-list li{height: 60px;width: 100%;border-bottom: 1px solid #ddd;line-height: 80px;margin-left: 15px;margin-top: 8px;}
+.file-list li>div{float:left;}	
+.file-list .file-img{width:100%;margin-right: 10px;}
+.file-list .file-img>img{width: 50px;height: 50px;float: left;}
+.file-list .file-info{width:86%;display: inline-block;vertical-align: middle;float: right;}
+.file-list .file-info>div{height: 26px;line-height: 26px;}
+.file-list .file-info img{width:22px;height: 22px;margin-right: 5px;}
+.file-list .file-info span{
+	word-break: break-all;
+	word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.file-title  .pull-left{width:48%;}
+.file-title .pull-right{text-align: right;}
+.file-btn .pull-left{margin-right: 10px;width: 180px;}
+.file-btn a{top:5px;font-size:16px;color:#000;margin-left: 10px;}
+.file-btn a:hover{color:#FF0033;}
+

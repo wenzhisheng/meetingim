@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kingim.dao.FriendApplyMapper">
+    <resultMap id="BaseResultMap" type="kingim.model.FriendApply">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="from_user_id" property="fromUserId" jdbcType="INTEGER" />
+        <result column="to_user_id" property="toUserId" jdbcType="INTEGER" />
+        <result column="remark" property="remark" jdbcType="VARCHAR" />
+        <result column="apply_time" property="applyTime" jdbcType="TIMESTAMP" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="friend_type_id" property="friendTypeId" jdbcType="INTEGER" />
+    </resultMap>
+
+    <resultMap type="kingim.model.FriendApply" id="FriendApplyMap" extends="BaseResultMap">
+        <association property="fromUser" javaType="kingim.model.User" columnPrefix="from_"
+                     resultMap="kingim.dao.UserMapper.JoinMap">
+        </association>
+        <association property="toUser" javaType="kingim.model.User" columnPrefix="to_"
+                     resultMap="kingim.dao.UserMapper.JoinMap">
+        </association>
+    </resultMap>
+
+    <!-- 查看好友申请SQL 取user用户名，userInfo常用信息 -->
+    <sql id="GetApplySql">
+		SELECT
+			fapply.*, fromUser.user_name from_user_name,
+			fromUser.nick_name from_nick_name,
+			fromUser.avatar from_avatar,
+			fromUser.sign from_sign,
+			toUser.user_name to_user_name,
+			toUser.nick_name to_nick_name,
+			toUser.avatar to_avatar,
+			toUser.sign to_sign
+		FROM
+			friend_apply fapply
+		JOIN t_user fromUser ON fapply.from_user_id = fromUser.id
+		JOIN t_user toUser ON fapply.to_user_id = toUser.id
+	</sql>
+
+    <!-- 查询我发出的好友申请 -->
+    <select id="getByFromUserId" resultMap="FriendApplyMap">
+        <include refid="GetApplySql" />
+        <where>
+            fapply.from_user_id = #{fromUserId}
+            <if test="status!=null and status !=-1">
+                and fapply.status = #{status}
+            </if>
+        </where>
+        order by fapply.apply_time desc
+    </select>
+
+    <!-- 查询我接收到的好友申请 -->
+    <select id="getByToUserId" resultMap="FriendApplyMap">
+        <include refid="GetApplySql" />
+        <where>
+            fapply.to_user_id = #{toUserId}
+            <if test="status!=null and status !=-1">
+                and fapply.status = #{status}
+            </if>
+        </where>
+        order by fapply.apply_time desc
+    </select>
+
+    <!-- 更新申请状态 -->
+    <update id="updateStatus">
+        update friend_apply fapply
+        <set>
+            fapply.status = #{status}
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>
+
+</mapper>

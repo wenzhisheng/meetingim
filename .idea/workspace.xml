@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="KingIM:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92ca48b9-5319-48fc-aac5-b31ff2c42a02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/wap.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/layim/wap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kingim/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kingim/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layim/im.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layim/im.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1432790334">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="38" />
+          <entry key="project.open.time.1" value="8" />
+          <entry key="project.open.time.10" value="5" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="5" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="39" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="13" />
+          <entry key="css" value="55" />
+          <entry key="friend" value="15" />
+          <entry key="friend_apply" value="14" />
+          <entry key="friend_message" value="10" />
+          <entry key="friend_type" value="10" />
+          <entry key="gitignore" value="1" />
+          <entry key="group_message" value="11" />
+          <entry key="group_user" value="7" />
+          <entry key="html" value="7" />
+          <entry key="java" value="422" />
+          <entry key="jpeg" value="1" />
+          <entry key="js" value="77" />
+          <entry key="json" value="1" />
+          <entry key="jsp" value="87" />
+          <entry key="log" value="1" />
+          <entry key="map" value="3" />
+          <entry key="md" value="2" />
+          <entry key="properties" value="9" />
+          <entry key="rnc" value="1" />
+          <entry key="sql" value="50" />
+          <entry key="svg" value="1" />
+          <entry key="t_group" value="9" />
+          <entry key="t_user" value="15" />
+          <entry key="xml" value="104" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="13" />
+          <entry key="CSS" value="55" />
+          <entry key="Database Element" value="91" />
+          <entry key="HTML" value="7" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="422" />
+          <entry key="JSON" value="1" />
+          <entry key="JSP" value="87" />
+          <entry key="JavaScript" value="77" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="9" />
+          <entry key="RNG Compact" value="1" />
+          <entry key="SQL" value="9" />
+          <entry key="SVG" value="1" />
+          <entry key="Scratch" value="41" />
+          <entry key="SourceMap" value="3" />
+          <entry key="XML" value="104" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="212" />
+          <entry key="css" value="3081" />
+          <entry key="java" value="4172" />
+          <entry key="js" value="5751" />
+          <entry key="jsp" value="7536" />
+          <entry key="md" value="12" />
+          <entry key="sql" value="570" />
+          <entry key="txt" value="66" />
+          <entry key="xml" value="1799" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="3081" />
+          <entry key="JAVA" value="4172" />
+          <entry key="JSP" value="7536" />
+          <entry key="JavaScript" value="5751" />
+          <entry key="Markdown" value="12" />
+          <entry key="PLAIN_TEXT" value="66" />
+          <entry key="SQL" value="66" />
+          <entry key="Scratch" value="740" />
+          <entry key="XML" value="1775" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kingim/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/wap.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/layim/im.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/layim/wap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/main.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/chatLog.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>friendInfo</find>
+      <find>getFriendTypeByUserId</find>
+      <find>int</find>
+      <find>getByUserIdTypeName</find>
+      <find>getFriendByUserId</find>
+      <find>FriendTypeService</find>
+      <find>getFriendByTypeId</find>
+      <find>myFriends_li</find>
+      <find>删除该好友后</find>
+      <find>delFriends</find>
+      <find>teamNames</find>
+      <find>alert(1</find>
+      <find>#</find>
+      <find>&quot;#&quot;</find>
+      <find>updateById</find>
+      <find>listGroup1</find>
+      <find>getGroupByUserId</find>
+      <find>listGroup</find>
+      <find>add</find>
+      <find>qunMemberList</find>
+      <find>addChat</find>
+      <find>creatGroup_sure</find>
+      <find>reNameGroupBtn</find>
+      <find>renameGroup_btn</find>
+      <find>layim-chat-main</find>
+      <find>addMember_ul</find>
+      <find>var</find>
+      <find>addSomeone</find>
+      <find>userId</find>
+      <find>alert</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>vatar</replace>
+      <replace>&quot;btn btn-primary btn-xs myFriends_block&quot;</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/webapp</dir>
+      <dir>$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src/main/webapp/js</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/kingim/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/controller/FriendTypeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/ws/QunWS.java" />
+        <option value="$PROJECT_DIR$/src/test/java/kingim/dao/GroupMessageMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/controller/GroupController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/myFriends.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/myFriends.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/impl/FriendTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/FriendTypeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/controller/FriendController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/kingim/dao/FriendMessageMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/searchFriends.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/myGroups.css" />
+        <option value="$PROJECT_DIR$/src/test/java/kingim/dao/GroupUserMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/impl/GroupMessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/myGroups.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/controller/GroupUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/GroupUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/impl/GroupUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/dao/GroupUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/mapping/GroupUserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/ws/FileUpload.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/dao/FriendApplyMapper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/kingim/dao/FriendApplyMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/dao/FriendMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/mapping/FriendMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/FriendApplyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/FriendService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/impl/FriendServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/model/FriendApply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/mapping/FriendApplyMapping.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/kingim/service/FriendTypeServiceTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/63b7ff8e-57a0-4976-b5a3-f25ad5ccc20c/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/mapping/FriendTypeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/model/FriendType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/model/Friend.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/searchFriends.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myFriends.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/searchFriends.js" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/ws/FriendWS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/controller/FriendApplyController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/msgbox.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/service/impl/FriendApplyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/myGroups.js" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/ws/LLWS.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/wap.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/kingim/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/layim/wap.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/layim/im.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="$USER_HOME$/soft/apache-maven-3.5.4/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="KingIM Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="54" />
+    <option name="y" value="22" />
+    <option name="width" value="1386" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralScala</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Scala</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kingim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kingim" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="layim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KingIM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KingIM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsps" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SearchEverywhereHistoryKey" value="FriendTypeController&#9;FILE&#9;file:///Users/jinkai/gitee/KingIM/src/main/java/kingim/controller/FriendTypeController.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/bootstrap" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kingim.controller" />
+      <recent name="kingim.dao" />
+      <recent name="kingim.service" />
+      <recent name="kingim.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/layim" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/bootstrap" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.KingIM">
+    <configuration name="FriendApplyMapperTest.getByFromUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KingIM" />
+      <option name="PACKAGE_NAME" value="kingim.dao" />
+      <option name="MAIN_CLASS_NAME" value="kingim.dao.FriendApplyMapperTest" />
+      <option name="METHOD_NAME" value="getByFromUserId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FriendMessageServiceTest.getHistoryMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KingIM" />
+      <option name="PACKAGE_NAME" value="kingim.service" />
+      <option name="MAIN_CLASS_NAME" value="kingim.service.FriendMessageServiceTest" />
+      <option name="METHOD_NAME" value="getHistoryMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KingIM" />
+      <option name="PACKAGE_NAME" value="kingim.service" />
+      <option name="MAIN_CLASS_NAME" value="kingim.service.FriendTypeServiceTest" />
+      <option name="METHOD_NAME" value="getFriendTypeByUserId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FriendTypeServiceTest.getUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KingIM" />
+      <option name="PACKAGE_NAME" value="kingim.service" />
+      <option name="MAIN_CLASS_NAME" value="kingim.service.FriendTypeServiceTest" />
+      <option name="METHOD_NAME" value="getUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupUserMapperTest.getByGroupId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="KingIM" />
+      <option name="PACKAGE_NAME" value="kingim.dao" />
+      <option name="MAIN_CLASS_NAME" value="kingim.dao.GroupUserMapperTest" />
+      <option name="METHOD_NAME" value="getByGroupId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KingIM" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.91" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <deployment>
+        <artifact name="KingIM:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_KingIM_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60403" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="KingIM:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.KingIM" />
+      <item itemvalue="JUnit.GroupUserMapperTest.getByGroupId" />
+      <item itemvalue="JUnit.FriendApplyMapperTest.getByFromUserId" />
+      <item itemvalue="JUnit.FriendTypeServiceTest.getUserById" />
+      <item itemvalue="JUnit.FriendMessageServiceTest.getHistoryMessage" />
+      <item itemvalue="JUnit.FriendTypeServiceTest.getFriendTypeByUserId" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FriendTypeServiceTest.getFriendTypeByUserId" />
+        <item itemvalue="JUnit.FriendMessageServiceTest.getHistoryMessage" />
+        <item itemvalue="JUnit.FriendTypeServiceTest.getUserById" />
+        <item itemvalue="JUnit.FriendApplyMapperTest.getByFromUserId" />
+        <item itemvalue="JUnit.GroupUserMapperTest.getByGroupId" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92ca48b9-5319-48fc-aac5-b31ff2c42a02" name="Default Changelist" comment="" />
+      <created>1543423599282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543423599282</updated>
+      <workItem from="1543423601071" duration="199000" />
+      <workItem from="1543750532856" duration="3856000" />
+      <workItem from="1543756557060" duration="961000" />
+      <workItem from="1544317136495" duration="27630000" />
+      <workItem from="1544454157809" duration="1992000" />
+      <workItem from="1544799015245" duration="3165000" />
+      <workItem from="1544806879486" duration="617000" />
+      <workItem from="1544808681482" duration="246000" />
+      <workItem from="1544832373295" duration="735000" />
+      <workItem from="1544964739311" duration="2977000" />
+      <workItem from="1545055690762" duration="3359000" />
+      <workItem from="1545401440035" duration="7519000" />
+      <workItem from="1546008263393" duration="3236000" />
+      <workItem from="1546135251680" duration="22140000" />
+      <workItem from="1546179339653" duration="947000" />
+      <workItem from="1546415601414" duration="76495000" />
+      <workItem from="1546767885903" duration="86000" />
+      <workItem from="1546768285223" duration="9261000" />
+      <workItem from="1546842783456" duration="3321000" />
+      <workItem from="1546847418564" duration="391000" />
+      <workItem from="1546847817842" duration="9836000" />
+      <workItem from="1546915407169" duration="25000" />
+      <workItem from="1546915484128" duration="413000" />
+      <workItem from="1546922769347" duration="11389000" />
+      <workItem from="1547044029432" duration="9237000" />
+      <workItem from="1547282140862" duration="81946000" />
+      <workItem from="1547871255149" duration="4606000" />
+      <workItem from="1547913964769" duration="3268000" />
+      <workItem from="1547945194262" duration="1871000" />
+      <workItem from="1548554232550" duration="11356000" />
+      <workItem from="1548568963193" duration="102000" />
+      <workItem from="1548598793692" duration="809000" />
+      <workItem from="1549767212573" duration="833000" />
+      <workItem from="1550419171092" duration="67000" />
+      <workItem from="1552401033160" duration="79000" />
+      <workItem from="1553011519583" duration="1512000" />
+      <workItem from="1553699178535" duration="9625000" />
+      <workItem from="1553960216575" duration="6000000" />
+      <workItem from="1554216613953" duration="4575000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="FriendTypeServiceTest_getUserById - 2019.01.27 at 10h 23m 13s.xml">
+      <configuration name="FriendTypeServiceTest.getUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendMessageServiceTest_getHistoryMessage - 2019.01.27 at 10h 26m 14s.xml">
+      <configuration name="FriendMessageServiceTest.getHistoryMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendTypeServiceTest_getFriendTypeByUserId - 2019.01.27 at 10h 26m 56s.xml">
+      <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendTypeServiceTest_getFriendTypeByUserId - 2019.01.27 at 10h 28m 36s.xml">
+      <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendTypeServiceTest_getFriendTypeByUserId - 2019.01.27 at 10h 28m 47s.xml">
+      <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendTypeServiceTest_getFriendTypeByUserId - 2019.01.27 at 10h 40m 15s.xml">
+      <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendTypeServiceTest_getFriendTypeByUserId - 2019.01.27 at 10h 43m 27s.xml">
+      <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendTypeServiceTest_getFriendTypeByUserId - 2019.01.27 at 10h 44m 44s.xml">
+      <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendTypeServiceTest_getFriendTypeByUserId - 2019.01.27 at 10h 50m 07s.xml">
+      <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendTypeServiceTest_getFriendTypeByUserId - 2019.01.27 at 10h 50m 39s.xml">
+      <configuration name="FriendTypeServiceTest.getFriendTypeByUserId" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="326682000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.22174536" />
+      <window_info id="Structure" order="1" sideWeight="0.5032258" side_tool="true" weight="0.25520834" />
+      <window_info id="Web" order="2" sideWeight="0.5032258" side_tool="true" weight="0.25520834" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Learn" order="4" weight="0.3297568" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.3587385" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.24819277" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.49491096" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32824427" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.3292517" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25903615" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32409638" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.36641222" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.29315478" />
+      <window_info anchor="right" id="CDI" order="4" />
+      <window_info anchor="right" id="JSF" order="5" />
+      <window_info anchor="right" id="Bean Validation" order="6" weight="0.3297568" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.23214285" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.22174536" />
+      <window_info id="Structure" order="1" sideWeight="0.5032258" side_tool="true" weight="0.25520834" />
+      <window_info id="Web" order="2" sideWeight="0.5032258" side_tool="true" weight="0.25520834" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Learn" order="4" weight="0.3297568" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.3587385" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.44216868" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.49491096" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32824427" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.3292517" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25903615" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32409638" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.36641222" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.29315478" />
+      <window_info anchor="right" id="CDI" order="4" />
+      <window_info anchor="right" id="JSF" order="5" />
+      <window_info anchor="right" id="Bean Validation" order="6" weight="0.3297568" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.23214285" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/mapping/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/mapping/FriendTypeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/model/FriendType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/service/FriendService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/service/impl/FriendServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/model/Friend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="159" column="24" lean-forward="true" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/mapping/FriendMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/mapping/FriendApplyMapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/controller/FriendController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/searchFriends.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="87" column="101" selection-start-line="87" selection-start-column="88" selection-end-line="87" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/layim/css/modules/layim/html/msgbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="205" column="9" lean-forward="true" selection-start-line="205" selection-start-column="9" selection-end-line="205" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/layim/css/modules/layim/html/chatlog.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/layim/css/modules/layim/html/find.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-217" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/controller/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-716">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/model/FriendApply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/layim/css/modules/layim/html/getmsg.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-906" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/ws/FriendWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/service/FriendApplyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/63b7ff8e-57a0-4976-b5a3-f25ad5ccc20c/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63b7ff8e-57a0-4976-b5a3-f25ad5ccc20c/schema/webchat/table/friend">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/controller/FriendApplyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="78" column="92" selection-start-line="78" selection-start-column="84" selection-end-line="78" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/service/impl/FriendApplyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="105" column="28" selection-start-line="105" selection-start-column="28" selection-end-line="105" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webchat.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/webchat.sql" />
+    <entry file="das://63b7ff8e-57a0-4976-b5a3-f25ad5ccc20c/schema/webchat/table/t_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63b7ff8e-57a0-4976-b5a3-f25ad5ccc20c/schema/webchat/table/friend_apply">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/msgbox.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="134" column="72" selection-start-line="134" selection-start-column="72" selection-end-line="134" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/myGroups.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3304" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/searchFriends.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myGroups.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/myFriends.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2212">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/websocket/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3174">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/service/GroupUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/ws/LLWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/vo/SNSdata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/vo/SNSUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/myFriends.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/vo/SNSInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/chatLog.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/servlet/http/HttpSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/wap.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/vo/SNSFriend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kingim/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/layim/wap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/layim/im.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean package -Dmaven.test.skip" />
+    <option value="clean install package -Dmaven.test.skip" />
+  </component>
+</project>

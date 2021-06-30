@@ -1,0 +1,92 @@
+.qunMemberList{
+    margin:0;
+}
+
+.myGroups_mem{
+    margin-bottom:15px;
+}
+
+.delGroup_btn,.myGroups_btns{
+    padding:0;
+}
+
+
+.delGroup_btn>button{
+    float:right;
+}
+
+.group_info{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.renameGroup_body, .addChatGroup_body{
+    width:100%;
+}
+
+.form-control{
+    display:inline;
+    width:80%;
+}
+
+.renameGroup_content, .addChatGroup_content{
+    width: 80%;
+    margin:5px auto;
+}
+
+.renameGroup_content_area, .addChatGroup_content_area{
+    vertical-align: top;
+}
+
+.media-left, .media-right, .media-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.addMember_choose img{
+    width:30px;
+    height: 30px;
+}
+
+a.addMember_li{
+    text-decoration: none;
+    color:#333;
+    display: inline-block;
+    width: 24.3%;
+    list-style: none;
+    padding:5px;
+}
+
+a.addMember_li.active{
+    border:1px solid #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+
+
+.myFriends_each{
+    padding:10px;
+}
+
+.myFriends_each:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.myGroups_content {
+    width:100%;
+    display: table;
+}
+
+.myFriends_all {
+    vertical-align: middle;
+}
+
+.myFriends_all p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 17px;
+}

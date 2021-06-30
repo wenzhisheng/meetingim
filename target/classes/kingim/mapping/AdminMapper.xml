@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kingim.dao.AdminMapper" >
+
+  <resultMap id="BaseResultMap" type="kingim.model.AdminVO" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="account" property="account" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="telphone" property="telPhone" jdbcType="VARCHAR" />
+    <result column="is_enable" property="isEnable" jdbcType="TINYINT" />
+    <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+  </resultMap>
+
+    <!-- 查询是否是好友 -->
+    <select id="login" resultType="kingim.model.AdminVO">
+        select * from admin t
+        <where>
+            1=1
+            <if test="vo.account != null">
+                and t.account = #{vo.account,jdbcType=VARCHAR}
+            </if>
+            <if test="vo.password != null">
+                and t.password = #{vo.password,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+
+</mapper>

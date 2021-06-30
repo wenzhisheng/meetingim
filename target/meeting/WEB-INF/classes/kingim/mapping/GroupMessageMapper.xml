@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kingim.dao.GroupMessageMapper">
+
+    <resultMap id="BaseResultMap" type="kingim.model.GroupMessage">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="user_id" property="userId" jdbcType="INTEGER" />
+        <result column="group_id" property="groupId" jdbcType="INTEGER" />
+        <result column="content" property="content" jdbcType="VARCHAR" />
+        <result column="send_time" property="sendTime" jdbcType="TIMESTAMP" />
+        <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+        <result column="is_read" property="isRead" jdbcType="INTEGER" />
+        <result column="is_back" property="isBack" jdbcType="INTEGER" />
+        <result column="is_del" property="isDel" jdbcType="INTEGER" />
+        <result column="cid" property="cid" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <!-- 群消息 -->
+    <resultMap id="qunMsgMap" type="kingim.model.GroupMessage" extends="BaseResultMap">
+        <result column="avatar" property="avatar" jdbcType="VARCHAR" />
+        <result column="nick_name" property="nickName" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <delete id="scheduledGroupMessage">
+        delete from group_message
+    </delete>
+
+    <select id="listGroupMessage" resultMap="BaseResultMap">
+      select *
+      from group_message zs
+      <where>
+          1=1
+          <if test="vo.id != null">
+              and zs.id = #{vo.id,jdbcType=INTEGER}
+          </if>
+          <if test="vo.userId != null">
+              and zs.user_id = #{vo.userId,jdbcType=INTEGER}
+          </if>
+          <if test="vo.groupId != null">
+              and zs.group_id = #{vo.groupId,jdbcType=INTEGER}
+          </if>
+          <if test="vo.content != null">
+              and zs.content = #{vo.content,jdbcType=VARCHAR}
+          </if>
+          <if test="vo.isRead != null">
+              and zs.is_read = #{vo.isRead,jdbcType=INTEGER}
+          </if>
+          <if test="vo.isDel != null">
+              and zs.is_del = #{vo.isDel,jdbcType=INTEGER}
+          </if>
+          <if test="vo.isBack != null">
+              and zs.is_back = #{vo.isBack,jdbcType=INTEGER}
+          </if>
+          <if test="vo.cid != null">
+              and zs.cid = #{vo.cid,jdbcType=VARCHAR}
+          </if>
+          <if test="vo.startTime != null">
+              and zs.send_time &gt;= #{vo.startTime,jdbcType=TIMESTAMP}
+          </if>
+          <if test="vo.endTime != null">
+              and zs.send_time &lt;= #{vo.endTime,jdbcType=TIMESTAMP}
+          </if>
+      </where>
+      order by zs.send_time desc
+    </select>
+
+    <!-- 更新撤回 -->
+    <update id="updateByCid">
+        update group_message zs
+        <set>
+            zs.is_back = 1
+            ,zs.gmt_modified = NOW()
+        </set>
+        <where>
+            zs.cid = #{cid,jdbcType=VARCHAR}
+        </where>
+    </update>
+
+    <!-- 搜索群消息 -->
+    <select id="searchHistoryMessage" resultMap="qunMsgMap">
+        select group_message.*,t_user.*
+        from group_message,t_user
+        where
+        group_message.group_id =  #{groupId,jdbcType=INTEGER}
+        and group_message.is_back = 0
+        and group_message.is_del = 0
+        and group_message.user_id = t_user.id
+        and group_message.content like concat('%',#{searchStr},'%')
+        order by group_message.send_time desc
+   </select>
+
+    <!-- 聊天记录 -->
+    <select id="getHistoryMessage" resultMap="qunMsgMap">
+        select group_message.*,t_user.*
+        from group_message,t_user
+        where group_message.group_id =  #{groupId,jdbcType=INTEGER}
+        and group_message.is_back = 0
+        and group_message.is_del = 0
+        and group_message.user_id = t_user.id
+        ORDER BY group_message.send_time desc
+   </select>
+
+</mapper>

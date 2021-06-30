@@ -1,0 +1,95 @@
+.right_info{
+    text-align: center;
+}
+
+.right_info input{
+    text-align: left;
+    height: 30px;
+    font-size: 14px;
+    border: 1px #b9dcd9 solid;
+}
+
+.right_info_img{
+    text-align: center;
+    height: 22px;
+    position: fixed;
+    width: 100px;
+}
+
+.myFriends_colume{
+    border:1px solid transparent;
+    border-radius:3px;
+}
+
+[class *= col-]{
+    background-color: #fff;
+}
+
+.myFriends_md12{
+    height:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+    overflow: auto;
+}
+
+.myFriends_left{
+    height:auto;
+}
+
+.myFriends_right{
+    padding:0;
+}
+
+.myFriends_colume>row{
+    margin-top:15px;
+}
+
+/*col-md-3样式*/
+
+.btnMargin, .btnGroup{
+    margin-bottom:15px;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus{
+    background-color:#009688;
+}
+
+/*col-md-9样式*/
+.myFriends_each{
+    border:1px solid #bbbbbb;
+    border-radius: 3px;
+    padding:10px 10px 10px 10px;
+    margin-bottom:15px;
+}
+
+.myFriends_each img{
+    width: 60px;
+    margin:8px 15px 8px 15px;
+}
+
+.myFriends_block{
+    display: block;
+    height: 40px;
+    clear: both;
+}
+
+select.myFriends_block{
+    margin-right:0;
+}
+.myFriends_block:first-child{
+    margin-bottom:8px;
+}
+
+.myFriends_all button{
+    border:1px solid #bbbbbb;
+    border-radius: 3px;
+    margin-top:8px;
+}
+
+.myFriends_group{
+    margin-bottom:10px;
+}
+
+

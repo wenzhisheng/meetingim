@@ -1,0 +1,51 @@
+body{
+    background-color:#ebedf2;
+    height:auto;
+    /*padding-top:70px;*/
+    padding-top: 50px !important;
+}
+
+/*导航条样式*/
+.navbar-default{
+    background-color:#009688;
+    border-radius:0;
+}
+
+.navbar{
+    border:0px;
+}
+
+.navbar-default .navbar-header a,
+.navbar-default .navbar-header a:focus,
+.navbar-default .navbar-header a:hover{
+    color:#fff;
+    font-size:28px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #9fcac6;
+}
+
+.navbar-default .navbar-nav > li >a,
+.navbar-default .navbar-nav > li >a:focus,
+.navbar-default .navbar-nav > li >a:hover {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a{
+    padding:15px 20px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/*内容样式*/
+
+[class *= col-]{
+    background-color: #fff;
+}

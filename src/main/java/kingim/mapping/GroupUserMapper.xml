@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kingim.dao.GroupUserMapper" >
+  <resultMap id="BaseResultMap" type="kingim.model.GroupUser" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="group_id" property="groupId" jdbcType="INTEGER" />
+    <result column="join_time" property="joinTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+
+  <!-- 群组成员(显示群组信息和成员信息(user)) -->
+  <resultMap type="kingim.model.GroupUser" id="GroupUserMap" extends="BaseResultMap">
+    <association property="user" javaType="kingim.model.User">
+      <id column="id" property="id" />
+      <result column="nickName" property="nickName"/>
+      <result column="avatar" property="avatar"/>
+      <result column="sign" property="sign"/>
+    </association>
+  </resultMap>
+
+  <!-- 查询群成员 -->
+  <select id="getByGroupId" resultMap="GroupUserMap">
+    select guser.*,
+    tuser.nick_name nickName,
+    tuser.avatar avatar,
+    tuser.sign sign
+    from group_user guser
+    join t_user tuser on guser.user_id = tuser.id
+    <where>
+      guser.group_id = #{groupId,jdbcType=INTEGER}
+    </where>
+  </select>
+
+  <!-- 群Map -->
+  <resultMap type="kingim.model.Group" id="GroupMap">
+    <id property="id" column="id"/>
+    <result column="group_num" property="groupNum" jdbcType="INTEGER" />
+    <result column="group_name" property="groupName" jdbcType="VARCHAR" />
+    <result column="avatar" property="avatar" jdbcType="VARCHAR" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="TIMESTAMP" />
+    <result column="memberCount" property="memberCount" jdbcType="INTEGER" />
+  </resultMap>
+
+  <!-- 已加入的群组列表 -->
+    <select id="getByUserId" resultMap="GroupMap" parameterType="java.lang.Integer">
+		select
+		t_group.id,
+		t_group.group_num,
+		t_group.group_name,
+		t_group.avatar,
+		t_group.user_id,
+		t_group.description,
+		t_group.status,
+		(select count(id) FROM group_user WHERE group_user.group_id = t_group.id) memberCount
+		from t_group,group_user
+		where
+		group_user.group_id = t_group.id
+		and t_group.status = 1
+		and group_user.user_id = #{userId,jdbcType=INTEGER}
+	</select>
+
+    <!-- 简单群组成员id列表 -->
+    <select id="getSimpleMemberByGroupId" resultType="java.lang.String">
+		select user_id from group_user where group_id = #{groupId}
+	</select>
+
+  <!-- 清空群组成员 -->
+  <delete id="deleteByGroupId" parameterType="java.lang.Integer">
+    delete from group_user
+    <where>
+      group_id = #{groupId}
+    </where>
+  </delete>
+
+  <!-- 获取可加入讨论组的好友列表 -->
+  <select id="getNewMemberByGroupId" resultMap="kingim.dao.UserMapper.BaseResultMap">
+		select
+        uInfo.id id,
+        uInfo.user_name,
+        uInfo.nick_name,
+        uInfo.avatar
+        from
+           t_user uInfo,friend f
+        where
+           f.user_id = #{userId}
+        and f.friend_id = uInfo.ID
+        and f.friend_id not in (
+          select user_id
+          from group_user
+          where group_id = #{groupId}
+        )
+	</select>
+
+  <!-- 批量添加群组成员(忽略已加入的用户) -->
+  <insert id="batchSave">
+    insert ignore into group_user(user_id,group_id)
+    values
+    <foreach collection="guserList" item="guser" separator=",">
+      (#{guser.userId},#{guser.groupId})
+    </foreach>
+  </insert>
+
+</mapper>
